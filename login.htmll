@@ -1,9 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+
+    <title>Página de Login</title>
 
     <style>
         * {
@@ -23,7 +25,7 @@
 
         .login {
             width: 350px;
-            padding: 40px;
+            padding: 35px;
             background: white;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -31,7 +33,7 @@
 
         .login h1 {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             color: #333;
         }
 
@@ -42,7 +44,7 @@
         .campo label {
             display: block;
             margin-bottom: 8px;
-            color: #333;
+            color: #555;
             font-weight: bold;
         }
 
@@ -72,17 +74,31 @@
         }
 
         .botao:hover {
-            background: #268bea;
+            background: #1689e8;
+        }
+
+        .opcoes {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .opcoes a {
+            color: #1689e8;
+            text-decoration: none;
         }
 
         .cadastro {
             text-align: center;
             margin-top: 20px;
+            color: #555;
         }
 
         .cadastro a {
-            color: #268bea;
+            color: #1689e8;
             text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -100,7 +116,6 @@
                 <input 
                     type="email" 
                     id="email" 
-                    name="email"
                     placeholder="Digite seu e-mail"
                     required
                 >
@@ -111,10 +126,18 @@
                 <input 
                     type="password" 
                     id="senha" 
-                    name="senha"
                     placeholder="Digite sua senha"
                     required
                 >
+            </div>
+
+            <div class="opcoes">
+                <label>
+                    <input type="checkbox">
+                    Lembrar-me
+                </label>
+
+                <a href="#">Esqueci a senha</a>
             </div>
 
             <button type="submit" class="botao">
@@ -124,11 +147,12 @@
         </form>
 
         <div class="cadastro">
-            <p>Não possui uma conta?</p>
-            <a href="cadastro.html">Criar conta</a>
+            Não possui uma conta?
+            <a href="#">Cadastre-se</a>
         </div>
 
     </div>
 
 </body>
 </html>
+```
